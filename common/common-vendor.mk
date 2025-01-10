@@ -276,7 +276,7 @@ PRODUCT_PACKAGES += \
     HealthIntelligencePrebuilt
 endif
 
-TARGET_GMS_EXTRAS ?= false
+TARGET_GMS_EXTRAS = true
 ifeq ($(strip $(TARGET_GMS_EXTRAS)),true)
 PRODUCT_COPY_FILES += \
     vendor/gms/common/proprietary/product/app/Chrome/Chrome.apk.gz:$(TARGET_COPY_OUT_PRODUCT)/app/Chrome/Chrome.apk.gz \
@@ -289,9 +289,6 @@ PRODUCT_PACKAGES += \
     AvatarPickerGoogle \
     Chrome-Stub \
     CreativeAssistant \
-    DreamlinerDreamsPrebuilt_100894 \
-    DreamlinerPrebuilt_22000020 \
-    DreamlinerUpdater \
     Drive \
     Maps \
     MeetPrebuilt_20240414 \
@@ -306,8 +303,7 @@ PRODUCT_PACKAGES += \
     TipsPrebuilt_v6.0.0.631744426 \
     TrichromeLibrary-Stub \
     VendorSatelliteService \
-    WebViewGoogle-Stub \
-    YouTube
+    WebViewGoogle-Stub
 endif
 
 TARGET_GMS_EXTRAS_MINIMAL ?= false

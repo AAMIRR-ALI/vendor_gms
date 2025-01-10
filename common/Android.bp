@@ -379,18 +379,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "YouTube",
-	owner: "gms",
-	apk: "proprietary/product/app/YouTube/YouTube.apk",
-	preprocessed: true,
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "arcore-1.42",
 	owner: "gms",
 	apk: "proprietary/product/app/arcore-1.42/arcore-1.42.apk",
